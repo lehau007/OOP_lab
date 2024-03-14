@@ -1,0 +1,6 @@
+1. What happens if users choose “Cancel”?
+	The output should be "NO"
+
+2. How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do”
+and “I don’t”:
+	We can customize to : JOptionPane.showConfirmDialog(null,"Yes", "No", JOptionPane.YES_NO_OPTION);
