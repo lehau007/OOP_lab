@@ -25,9 +25,25 @@ public class nums_of_days {
         int countDays = 0, m = 0; // We need to m = 0
 
         // Solve
-        String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        String[][] months = { {"January","Jan.","Jan","1"},
+        {"February","Feb.","Feb","2"},
+        {"March","Mar.","Mar","3"},
+        {"April","Apr.","Apr","4"},
+        {"May","5"},
+        {"June","Jun","6"},
+        {"July", "Jul","7"},
+        {"August","Aug.","Aug","8"},
+        {"September","Sept.","Sep","9"},
+        {"October","Oct.","Oct","10"},
+        {"November","Nov.","Nov","11"},
+        {"December","Dec.","Dec","12"}};
         for (int i = 0; i < 12; i++) {
-            if (month.equals(months[i]) == true) m = i + 1;
+            for (int j = 0; j < months[i].length; j++) {
+                if (month.equals(months[i][j])) {
+                    m = i + 1;
+                    break;
+                }
+            }
         }
 
         if (m == 2) {
@@ -40,7 +56,7 @@ public class nums_of_days {
         else 
             countDays = 31;
 
-        System.out.print("There are " + countDays + " days in " + month);
+        System.out.print("There are " + countDays + " days in month number " + m + " of year " + year);
     }
 }
 
