@@ -1,0 +1,59 @@
+14.
+- Which classes are aggregates of other classes?
+	+ Cart is aggregate of Media
+	+ Store is aggregate of Media
+	+ CompactDisc is aggregate of Track.
+- Write constructors for parent and child classes. Remove redundant setter methods
+	Already in the code
+
+15.
+When overriding the equals() method of the Object class, you will have to cast the Object
+parameter obj to the type of Object that you are dealing with. For example, in the Media class,
+you must cast the Object obj to a Media, and then check the equality of the two objects’ attributes
+as the above requirements (i.e. title for Media; title and length for Track). If the
+passing object is not an instance of Media, what happens?
+
+Answer: If the passed object is not an instance of Media, the equals() method returns false.
+Book, CompactDisc and DigitalVideoDisc inherit Media, objects book, cd, dvd are also instances of Media. 
+It will result in a ClassCastException at runtime. This can potentially crash your program.
+
+
+16. Reading assignment
+- What are the advantages of Polymorphism?
+- How is Inheritance useful to achieve Polymorphism in Java?
+- What are the differences between Polymorphism and Inheritance in Java?
+
+Answers:
+- Polymorphism provides many advantages such as:
+    + Reusability: Polymorphism provides the reuse of code,
+    as methods with the same name can be used in different classes.
+    + Flexibility: Polymorphism allows for more flexible,
+    where the behaviour of an object can change at runtime depending on the context
+    in which it is being used.
+    + Complexity reduction: It can reduce the complexity of code by allowing
+    the use of the same method name for related functionality, making the code easier to read and maintain.
+    + Coding simplification: Polymorphism simplifies coding by reducing the number of methods
+    and constructors that need to be written.
+    by grouping related functionality in one class.
+    + Code Extensibility: Polymorphism enables code extensibility,
+    as new subclasses can be created to extend the functionality of the superclass
+    without modifying the existing code.
+    + Efficiency increase: Compile-time polymorphism can lead to more efficient coding.
+    The compiler can choose the appropriate method to call at compile time,
+    based types, arguments passed to it.
+- Inheritance lets us inherit attributes and methods from another class.
+Polymorphism uses those methods to perform different tasks.
+
+- The difference:
++ Inheritance:
+    -Inheritance is one where a new class is created (derived class)
+    that inherits the features from the already existing class(Base class).
+    -support the concept of reusability and reduces code length in object-oriented programming.
+    -single, hybrid, multiple, hierarchical and multilevel inheritance.
+    -used in pattern designing.
++ Polymorphism:
+    -Polymorphism is that which can be defined in multiple forms.
+    -Applied to functions or methods in a basic way.
+    -Allow the object to decide which form of the function to implement
+    at compile-time (overloading) as well as run-time (overriding).
+    -Whereas it can be compiled-time polymorphism (overload) as well as run-time polymorphism (overriding).
