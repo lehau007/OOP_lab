@@ -1,0 +1,30 @@
+Top-level containers:
+    AWT: Top-level containers include Frame, Dialog, and Window in AWT.
+
+    Swing: Top-level containers include JFrame, JDialog, and JWindow increase flexibility in Swing.
+
+
+Class names of components:
+    AWT: AWT components have simple class names, such as Button, Label, List, ...
+
+    Swing: Swing components have names starting with "J"
+
+
+Event handling:
+    AWT: In AWT, event handling is typically done by implementing listener interfaces. The components register their listeners using methods like addActionListener, addMouseListener.
+
+    Swing: Swing also uses listener interfaces for event handling,
+    but it provides additional convenience classes such as AbstractAction and Action for handling actions.
+    Swing components often have corresponding addListener methods
+
+
+Resulting appearances:
+    AWT: Appearance varies based on the underlying platform, resulting in different looks across operating systems.
+
+    Swing: Provides consistent appearance across platforms due to its pluggable look and feel mechanism,
+    offering options like "Metal", "Nimbus", "Windows", "GTK", etc.
+
+
+Overall, Swing provides a more powerful and customizable framework for GUI development compared to AWT.
+It offers a richer set of components, better event handling mechanisms, and more consistent appearance across different platforms.
+However, AWT remains useful for simpler applications or for integration with existing AWT-based codebases.
