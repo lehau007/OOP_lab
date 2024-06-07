@@ -1,0 +1,5 @@
+11. Update the Aims class
+- The Aims class must be updated to handle any exceptions generated when the play() methods
+are called. What happens when you don’t update for them to catch?
+Answers:
+- It will result in an undefined exception control. You must add try-catch block to run the code.
